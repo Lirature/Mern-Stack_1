@@ -3,7 +3,6 @@ import { createBrowserRouter } from "react-router-dom"
 import App from "../App"
 import Home from "../pages/Home"
 import Login from "../pages/Login"
-import ForgotPassword from "../components/Users/ForgotPassword"
 import Signup from "../pages/Signup"
 import AdminPanel from "../pages/AdminPanel"
 import AllUser from "../components/Users/AllUser"
@@ -37,10 +36,6 @@ const router = createBrowserRouter([
             {
                 path: "product/:_id", //:_id - sẽ được gán cho useParams().Đúng hơn là useParams() nhận :_id thành id
                 element: <ProductDetails />,
-            },
-            {
-                path: "forgot-password",
-                element: <ForgotPassword />,
             },
             {
                 path: "cart",
